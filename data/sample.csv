@@ -1,0 +1,817 @@
+date,store,category,item,quantity,unit_price,revenue
+2026-05-17,Downtown,merch,Mug,2,11.98,23.96
+2026-02-09,Riverside,tea,Green Tea,3,3.07,9.21
+2026-02-17,Riverside,sandwich,BLT,3,7.04,21.12
+2026-06-10,Downtown,coffee,Drip Coffee,2,2.85,5.7
+2026-03-21,Riverside,tea,Green Tea,7,2.86,20.02
+2026-01-12,Riverside,sandwich,Veggie Wrap,2,6.78,13.56
+2026-06-27,Airport,merch,Mug,6,12.26,73.56
+2026-05-09,Riverside,coffee,Latte,5,4.38,21.9
+2026-04-04,Uptown,merch,Gift Card,5,25.83,129.15
+2026-04-30,Riverside,sandwich,Veggie Wrap,4,6.76,27.04
+2026-01-03,Uptown,pastry,Scone,4,3.16,12.64
+2026-05-21,Riverside,coffee,Espresso,2,2.55,5.1
+2026-03-19,Airport,pastry,Muffin,4,3.14,12.56
+2026-04-30,Airport,coffee,Cappuccino,3,3.92,11.76
+2026-05-10,Airport,sandwich,BLT,2,7.28,14.56
+2026-01-22,Riverside,merch,Mug,3,11.72,35.16
+2026-03-08,Downtown,coffee,Cappuccino,2,4.03,8.06
+2026-06-05,Airport,coffee,Latte,7,4.41,30.87
+2026-01-03,Riverside,coffee,Espresso,7,2.57,17.99
+2026-01-11,Riverside,tea,Chai Latte,4,3.82,15.28
+2026-01-22,Airport,pastry,Scone,2,2.98,5.96
+2026-02-04,Uptown,sandwich,Turkey Club,1,7.28,7.28
+2026-03-17,Airport,pastry,Muffin,1,2.97,2.97
+2026-03-08,Riverside,pastry,Croissant,3,3.26,9.78
+2026-04-03,Downtown,pastry,Croissant,4,3.11,12.44
+2026-05-13,Airport,pastry,Scone,4,,12.4
+2026-05-17,Airport,coffee,Latte,3,4.41,13.23
+2026-01-23,Downtown,merch,Bag of Beans,2,14.31,28.62
+2026-06-04,Downtown,merch,Bag of Beans,2,13.84,27.68
+2026-06-22,Riverside,tea,Iced Tea,2,2.75,5.5
+2026-05-03,Airport,merch,Bag of Beans,2,14.56,29.12
+2026-04-11,Airport,merch,Gift Card,,24.13,72.39
+2026-02-24,Uptown,merch,Gift Card,3,25.96,77.88
+2026-02-26,Riverside,sandwich,BLT,2,6.98,13.96
+2026-01-24,Airport,merch,Gift Card,6,24.91,149.46
+2026-05-11,Downtown,sandwich,Veggie Wrap,5,6.42,32.1
+2026-06-26,Downtown,coffee,Cappuccino,5,3.83,19.15
+2026-01-18,Airport,coffee,Drip Coffee,1,2.63,2.63
+2026-03-27,Downtown,coffee,Cappuccino,4,4.02,16.08
+2026-05-28,Airport,tea,Chai Latte,4,3.96,15.84
+2026-04-13,Downtown,sandwich,BLT,3,6.99,20.97
+2026-03-05,Uptown,merch,Gift Card,3,25.87,77.61
+2026-01-30,Airport,coffee,Latte,6,4.26,25.56
+2026-01-31,Uptown,tea,Green Tea,4,3.11,12.44
+2026-06-14,Riverside,merch,Gift Card,4,26.15,104.6
+2026-04-12,Downtown,pastry,Croissant,2,3.4,6.8
+2026-05-28,Downtown,sandwich,Veggie Wrap,4,6.68,26.72
+2026-05-20,Downtown,coffee,Espresso,4,2.38,9.52
+2026-05-09,Riverside,merch,Bag of Beans,5,15.15,75.75
+2026-05-25,Downtown,sandwich,BLT,4,7.05,28.2
+2026-06-25,Airport,tea,Chai Latte,2,4.18,8.36
+2026-05-14,Airport,merch,Mug,3,12.19,36.57
+2026-01-05,Uptown,merch,Gift Card,3,25.09,75.27
+2026-04-03,Downtown,coffee,Espresso,3,2.53,7.59
+2026-05-12,Uptown,pastry,Scone,3,3.16,9.48
+2026-06-20,Uptown,sandwich,BLT,2,7.26,14.52
+2026-06-28,Downtown,pastry,Scone,4,3.24,12.96
+2026-01-26,Riverside,pastry,Scone,2,3.09,6.18
+2026-03-09,Downtown,tea,Chai Latte,1,3.94,3.94
+2026-06-19,Downtown,sandwich,BLT,3,7.33,21.99
+2026-05-19,Riverside,pastry,Muffin,2,3.09,6.18
+2026-06-08,Downtown,pastry,Croissant,3,3.4,10.2
+2026-05-29,Uptown,merch,Mug,6,11.47,68.82
+2026-04-27,Uptown,pastry,Croissant,2,3.39,6.78
+2026-05-29,Uptown,sandwich,Veggie Wrap,5,6.5,32.5
+2026-05-18,Riverside,tea,Green Tea,5,3.07,15.35
+2026-03-15,Downtown,tea,Chai Latte,4,4.12,16.48
+2026-01-23,Airport,coffee,Cappuccino,2,4.2,8.4
+2026-05-20,Riverside,tea,Iced Tea,5,2.63,13.15
+2026-06-18,Riverside,merch,Bag of Beans,1,14.83,14.83
+2026-04-24,Uptown,coffee,Drip Coffee,4,2.69,10.76
+2026-05-21,Downtown,sandwich,BLT,3,6.72,20.16
+2026-03-12,Riverside,pastry,Scone,5,3.06,15.3
+2026-04-23,Airport,sandwich,Veggie Wrap,4,6.55,26.2
+2026-04-18,Airport,merch,Gift Card,3,24.5,73.5
+2026-02-03,Uptown,merch,Mug,3,12.2,36.6
+2026-05-05,Downtown,pastry,Scone,5,3.2,16.0
+2026-03-05,Uptown,sandwich,BLT,3,6.91,20.73
+2026-03-26,Uptown,merch,Bag of Beans,1,14.48,14.48
+2026-03-17,Airport,pastry,Scone,3,3.11,9.33
+2026-03-12,Airport,sandwich,Veggie Wrap,3,7.05,21.15
+2026-03-31,Riverside,coffee,Latte,2,4.1,8.2
+2026-05-02,Downtown,tea,Green Tea,3,3.05,9.15
+2026-03-22,Downtown,pastry,Muffin,4,3.0,12.0
+2026-06-05,Airport,sandwich,Turkey Club,6,7.3,43.8
+2026-03-17,Downtown,tea,Chai Latte,4,4.18,16.72
+2026-06-02,Airport,merch,Bag of Beans,1,14.92,14.92
+2026-05-29,Downtown,merch,Mug,3,12.1,36.3
+2026-04-28,Riverside,coffee,Cappuccino,4,3.82,15.28
+2026-04-30,Riverside,pastry,Scone,6,3.25,19.5
+2026-04-22,Uptown,sandwich,BLT,4,6.77,27.08
+2026-01-24,Uptown,sandwich,BLT,2,7.25,14.5
+2026-06-04,Uptown,tea,Iced Tea,3,2.79,8.37
+2026-02-26,Uptown,tea,Iced Tea,2,2.8,5.6
+2026-03-17,Riverside,pastry,Scone,3,2.99,8.97
+2026-05-03,Riverside,coffee,Cappuccino,4,4.12,16.48
+2026-03-16,Downtown,coffee,Espresso,2,2.5,5.0
+2026-02-14,Airport,sandwich,BLT,5,6.68,33.4
+2026-04-28,Uptown,merch,Mug,5,12.21,61.05
+2026-05-02,Downtown,coffee,Drip Coffee,5,2.82,14.1
+2026-01-23,Riverside,coffee,Espresso,8,2.39,19.12
+2026-01-05,Airport,coffee,Latte,4,4.23,16.92
+2026-04-08,Uptown,sandwich,Veggie Wrap,6,6.62,39.72
+2026-06-11,Downtown,coffee,Latte,5,4.07,20.35
+2026-03-02,Airport,tea,Chai Latte,1,4.16,4.16
+2026-01-24,Riverside,merch,Gift Card,2,24.18,48.36
+2026-06-16,Airport,pastry,Scone,1,3.09,3.09
+2026-05-14,Riverside,pastry,Muffin,2,3.05,6.1
+2026-06-08,Downtown,merch,Bag of Beans,4,14.12,56.48
+2026-05-26,Downtown,tea,Iced Tea,2,2.77,5.54
+2026-06-05,Riverside,coffee,Cappuccino,5,4.09,20.45
+2026-02-18,Riverside,merch,Gift Card,1,24.58,24.58
+2026-06-21,Airport,coffee,Drip Coffee,4,2.63,10.52
+2026-03-16,Riverside,pastry,Croissant,3,3.13,9.39
+2026-02-27,Uptown,sandwich,BLT,2,6.71,13.42
+2026-05-30,Riverside,sandwich,BLT,7,7.25,50.75
+2026-03-03,Downtown,coffee,Latte,4,4.3,17.2
+2026-06-07,Riverside,tea,Iced Tea,2,2.87,5.74
+2026-02-03,Downtown,tea,Iced Tea,2,2.71,5.42
+2026-03-18,Uptown,sandwich,BLT,5,6.97,34.85
+2026-05-23,Riverside,merch,Gift Card,5,24.86,124.3
+2026-04-08,Riverside,,Scone,2,3.19,6.38
+2026-01-15,Uptown,tea,Iced Tea,3,2.77,8.31
+2026-05-10,Airport,pastry,Scone,2,3.05,6.1
+2026-01-11,Downtown,pastry,Muffin,4,2.92,11.68
+2026-05-25,Riverside,tea,Green Tea,3,3.03,9.09
+2026-06-18,Uptown,tea,Chai Latte,3,4.11,12.33
+2026-01-08,Airport,pastry,Croissant,1,3.41,3.41
+2026-03-17,Airport,coffee,Latte,2,4.31,8.62
+2026-02-12,Airport,merch,Mug,4,12.56,50.24
+2026-06-08,Uptown,sandwich,BLT,5,6.71,33.55
+2026-02-15,Airport,coffee,Espresso,4,2.59,10.36
+2026-06-06,Riverside,sandwich,Turkey Club,5,7.73,38.65
+2026-02-04,Airport,sandwich,Veggie Wrap,1,6.67,6.67
+2026-04-14,Riverside,coffee,Latte,4,4.35,17.4
+2026-03-23,Uptown,tea,Chai Latte,5,3.97,19.85
+2026-04-11,Riverside,tea,Chai Latte,4,3.97,15.88
+2026-06-16,Airport,tea,Green Tea,4,2.87,11.48
+2026-06-05,,tea,Chai Latte,8,3.94,31.52
+2026-04-20,Airport,sandwich,Turkey Club,2,7.62,15.24
+2026-06-13,Uptown,sandwich,Veggie Wrap,7,6.54,45.78
+2026-02-24,Airport,tea,Iced Tea,3,2.84,8.52
+2026-03-05,Riverside,tea,Green Tea,1,2.92,2.92
+2026-01-25,Uptown,sandwich,Veggie Wrap,2,6.51,13.02
+2026-02-25,Downtown,tea,Iced Tea,1,2.81,2.81
+2026-05-12,Downtown,coffee,Latte,4,4.11,16.44
+2026-05-01,Downtown,coffee,Latte,10,4.1,41.0
+2026-03-08,Riverside,tea,Chai Latte,2,4.1,8.2
+2026-04-09,Airport,merch,Gift Card,2,25.53,51.06
+2026-06-28,Riverside,pastry,Scone,4,3.06,12.24
+2026-02-08,Uptown,coffee,Latte,2,4.25,8.5
+2026-05-22,Uptown,tea,Chai Latte,6,3.94,23.64
+2026-02-09,Uptown,merch,Gift Card,4,24.17,96.68
+2026-04-04,Riverside,coffee,Latte,6,4.33,25.98
+2026-04-17,Downtown,pastry,Croissant,5,3.2,16.0
+2026-01-02,Downtown,coffee,Drip Coffee,3,2.72,8.16
+2026-01-23,Downtown,pastry,Muffin,10,2.93,29.3
+2026-01-02,Airport,tea,Iced Tea,4,2.88,11.52
+2026-05-27,Downtown,coffee,Latte,4,4.06,16.24
+2026-01-12,Uptown,coffee,Cappuccino,3,3.8,11.4
+2026-03-14,Uptown,sandwich,Veggie Wrap,4,6.84,27.36
+2026-06-24,Airport,sandwich,Turkey Club,1,7.26,7.26
+2026-02-12,Uptown,pastry,Scone,1,3.08,3.08
+2026-05-24,Uptown,tea,Iced Tea,3,2.79,8.37
+2026-05-22,Uptown,tea,Chai Latte,2,3.88,7.76
+2026-05-16,Airport,tea,Chai Latte,10,3.86,38.6
+2026-04-09,Riverside,coffee,Drip Coffee,2,2.81,5.62
+2026-01-19,Downtown,coffee,Drip Coffee,5,2.68,13.4
+2026-05-02,Riverside,sandwich,Veggie Wrap,5,6.94,34.7
+2026-01-04,Downtown,tea,Green Tea,3,3.07,9.21
+2026-02-02,Downtown,pastry,Croissant,1,3.13,3.13
+2026-05-02,Riverside,tea,Iced Tea,1,2.78,2.78
+2026-05-22,Riverside,tea,Green Tea,3,2.95,8.85
+2026-01-16,Downtown,pastry,Croissant,3,3.29,9.87
+2026-03-01,Riverside,sandwich,BLT,5,7.14,35.7
+2026-03-14,Uptown,sandwich,Veggie Wrap,5,6.62,33.1
+2026-03-10,Riverside,merch,Mug,3,12.3,36.9
+2026-04-09,Riverside,pastry,Muffin,2,2.89,5.78
+2026-03-25,Riverside,tea,Green Tea,4,2.86,11.44
+2026-06-02,Riverside,coffee,Drip Coffee,4,2.66,10.64
+2026-02-28,Airport,coffee,Cappuccino,1,3.91,3.91
+2026-04-16,Airport,pastry,Scone,5,3.25,16.25
+2026-06-20,Uptown,coffee,Drip Coffee,5,2.82,14.1
+2026-04-26,Airport,pastry,Muffin,3,3.08,9.24
+2026-06-18,Riverside,pastry,Croissant,1,3.33,3.33
+2026-04-12,Uptown,pastry,Croissant,5,3.1,15.5
+2026-04-08,Airport,merch,Mug,1,11.81,11.81
+2026-01-27,Airport,pastry,Scone,2,3.25,6.5
+2026-01-03,Airport,tea,Green Tea,6,3.1,18.6
+2026-02-18,Airport,coffee,Latte,1,4.33,4.33
+2026-03-25,Airport,coffee,Cappuccino,2,4.18,8.36
+2026-04-25,Airport,pastry,Croissant,2,3.33,6.66
+2026-06-09,Downtown,coffee,Drip Coffee,3,2.8,8.4
+2026-06-03,Riverside,coffee,Drip Coffee,3,2.7,8.1
+2026-06-24,Riverside,sandwich,Turkey Club,2,7.75,15.5
+2026-03-29,Riverside,pastry,Muffin,4,3.12,12.48
+2026-04-28,Airport,coffee,Drip Coffee,3,2.78,8.34
+2026-02-19,Downtown,coffee,Latte,4,4.4,17.6
+2026-06-04,Downtown,merch,Bag of Beans,2,13.84,27.68
+2026-03-14,Airport,pastry,Scone,6,3.1,18.6
+2026-04-09,Riverside,sandwich,BLT,1,6.84,6.84
+2026-06-10,Uptown,merch,Gift Card,1,24.65,24.65
+2026-03-29,Airport,sandwich,Turkey Club,3,7.67,23.01
+2026-04-18,Downtown,sandwich,BLT,4,7.25,29.0
+2026-05-26,Riverside,coffee,Espresso,3,2.45,7.35
+2026-06-01,Riverside,pastry,Muffin,3,3.11,9.33
+2026-04-03,Uptown,tea,Iced Tea,6,2.71,16.26
+2026-06-15,Uptown,tea,Chai Latte,3,4.06,12.18
+2026-03-10,Airport,sandwich,Veggie Wrap,5,6.93,34.65
+2026-03-22,Uptown,tea,Chai Latte,6,3.92,23.52
+2026-04-15,Downtown,coffee,Latte,2,4.23,8.46
+2026-04-23,Riverside,coffee,Cappuccino,2,3.84,7.68
+2026-06-29,Downtown,merch,Bag of Beans,4,14.95,59.8
+2026-02-21,Downtown,coffee,Latte,1,4.34,4.34
+2026-03-30,Riverside,tea,Iced Tea,3,2.75,8.25
+2026-05-28,Downtown,tea,Chai Latte,3,4.17,12.51
+2026-01-29,Riverside,tea,Iced Tea,3,2.63,7.89
+2026-06-29,Downtown,coffee,Espresso,4,2.58,10.32
+2026-04-28,Riverside,pastry,Muffin,2,2.92,5.84
+2026-04-14,Uptown,merch,Gift Card,4,25.49,101.96
+2026-04-07,Downtown,tea,Iced Tea,4,2.76,11.04
+2026-03-27,Uptown,coffee,Espresso,2,2.4,4.8
+2026-06-06,Airport,pastry,Croissant,8,3.41,27.28
+2026-05-01,Airport,tea,Iced Tea,4,2.63,10.52
+2026-01-08,Riverside,sandwich,Turkey Club,4,7.72,30.88
+2026-03-21,Riverside,coffee,Latte,2,4.31,8.62
+2026-06-05,Uptown,coffee,Latte,1,4.08,4.08
+2026-06-30,Riverside,coffee,Drip Coffee,4,2.85,11.4
+2026-05-12,Downtown,sandwich,Turkey Club,5,7.57,37.85
+2026-01-01,Airport,merch,Bag of Beans,3,13.85,41.55
+2026-06-19,Airport,sandwich,BLT,4,7.29,29.16
+2026-06-27,Riverside,sandwich,BLT,3,7.2,21.6
+2026-01-06,Airport,,Muffin,2,3.01,6.02
+2026-03-19,Airport,sandwich,Turkey Club,3,7.17,21.51
+2026-04-28,Airport,coffee,Cappuccino,1,4.04,4.04
+2026-06-08,Downtown,pastry,Croissant,4,3.32,13.28
+2026-02-09,Uptown,coffee,Latte,2,4.29,8.58
+2026-05-30,Downtown,coffee,Drip Coffee,5,2.83,14.15
+2026-03-23,Riverside,merch,Mug,3,12.02,36.06
+2026-01-15,Riverside,sandwich,BLT,2,6.72,13.44
+2026-03-22,Downtown,sandwich,BLT,3,6.92,20.76
+2026-01-07,,pastry,Scone,1,2.97,2.97
+2026-04-08,Riverside,tea,Iced Tea,4,2.63,10.52
+2026-03-11,Riverside,merch,Gift Card,5,24.8,124.0
+2026-01-16,Uptown,coffee,Espresso,6,2.61,15.66
+2026-05-05,Riverside,coffee,Drip Coffee,3,2.62,7.86
+2026-05-06,Uptown,coffee,Drip Coffee,2,2.74,5.48
+2026-03-29,Downtown,sandwich,BLT,3,6.73,20.19
+2026-01-19,Downtown,pastry,Scone,2,3.13,6.26
+2026-01-25,Uptown,coffee,Espresso,5,2.48,12.4
+2026-05-21,Downtown,coffee,Drip Coffee,3,2.88,8.64
+2026-05-02,Airport,coffee,Latte,3,4.11,12.33
+2026-02-03,Downtown,merch,Gift Card,5,25.37,126.85
+2026-01-01,Riverside,pastry,Muffin,1,3.05,3.05
+2026-02-17,Riverside,merch,Bag of Beans,2,15.01,30.02
+2026-05-10,Airport,tea,Iced Tea,4,2.63,10.52
+2026-03-22,Airport,tea,Chai Latte,4,3.98,15.92
+2026-01-28,Airport,tea,Chai Latte,2,3.92,7.84
+2026-06-12,Uptown,merch,Gift Card,4,24.7,98.8
+2026-01-20,Downtown,pastry,Scone,4,2.95,11.8
+2026-05-12,Uptown,pastry,Scone,5,3.17,15.85
+2026-02-28,Downtown,sandwich,Turkey Club,6,7.35,44.1
+2026-02-27,Uptown,merch,Gift Card,6,23.98,143.88
+2026-06-16,Uptown,coffee,Espresso,3,2.57,7.71
+2026-02-13,Uptown,coffee,Cappuccino,9,3.89,35.01
+2026-01-26,Uptown,sandwich,Turkey Club,3,7.8,23.4
+2026-01-04,Airport,tea,Green Tea,1,2.9,2.9
+2026-04-08,Riverside,sandwich,BLT,3,7.0,21.0
+2026-06-26,Uptown,tea,Iced Tea,3,2.72,8.16
+2026-01-23,Airport,tea,Iced Tea,3,2.88,8.64
+2026-03-28,Airport,coffee,Drip Coffee,5,2.64,13.2
+2026-04-27,Uptown,pastry,Muffin,3,2.94,8.82
+2026-03-13,Riverside,coffee,Drip Coffee,3,2.86,8.58
+2026-06-06,Downtown,tea,Iced Tea,6,2.87,17.22
+2026-05-02,Downtown,pastry,Muffin,3,2.95,8.85
+2026-03-22,Uptown,tea,Green Tea,2,3.04,6.08
+2026-04-20,Riverside,tea,Chai Latte,4,3.98,15.92
+2026-06-21,Airport,pastry,Muffin,4,2.95,11.8
+2026-06-08,Airport,merch,Bag of Beans,5,14.37,71.85
+2026-02-14,Riverside,pastry,Croissant,3,3.33,9.99
+2026-01-15,Uptown,coffee,Latte,2,4.11,8.22
+2026-02-04,Airport,sandwich,Veggie Wrap,1,6.67,6.67
+2026-05-03,Uptown,tea,Green Tea,1,2.93,2.93
+2026-02-19,Riverside,tea,Green Tea,3,2.87,8.61
+2026-01-17,Uptown,sandwich,Veggie Wrap,2,6.55,13.1
+2026-06-29,Airport,merch,Mug,2,12.01,24.02
+2026-03-11,Uptown,merch,Gift Card,2,24.09,48.18
+2026-03-18,Downtown,tea,Chai Latte,1,4.02,4.02
+2026-06-02,Downtown,pastry,Scone,6,3.11,18.66
+2026-02-28,Airport,sandwich,Veggie Wrap,1,6.62,6.62
+2026-01-19,Downtown,coffee,Espresso,5,2.39,11.95
+2026-02-10,Uptown,pastry,Scone,3,3.25,9.75
+2026-02-23,Airport,merch,Mug,6,12.51,75.06
+2026-04-03,Downtown,tea,Chai Latte,4,4.08,16.32
+2026-05-28,Uptown,merch,Gift Card,6,24.34,146.04
+2026-06-27,Uptown,merch,Bag of Beans,1,13.84,13.84
+2026-01-21,Airport,merch,Mug,2,12.28,24.56
+2026-05-30,Downtown,pastry,Muffin,6,2.99,17.94
+2026-05-22,Uptown,pastry,Croissant,3,3.29,9.87
+2026-03-01,Uptown,sandwich,Turkey Club,4,7.17,28.68
+2026-03-12,Uptown,merch,Mug,4,12.01,48.04
+2026-03-19,Airport,merch,Gift Card,3,26.25,78.75
+2026-02-24,Riverside,merch,Bag of Beans,6,15.05,90.3
+2026-06-19,Airport,pastry,Croissant,6,3.15,18.9
+2026-06-17,Downtown,coffee,Latte,2,4.46,8.92
+2026-06-24,Uptown,sandwich,BLT,3,6.94,20.82
+2026-06-13,Riverside,sandwich,Veggie Wrap,5,6.82,34.1
+2026-01-26,Riverside,pastry,Croissant,3,3.1,9.3
+2026-03-12,Uptown,coffee,Cappuccino,2,3.83,7.66
+2026-03-15,Downtown,sandwich,BLT,2,6.97,13.94
+2026-06-15,Riverside,coffee,Latte,4,4.11,16.44
+2026-03-01,Airport,coffee,Drip Coffee,4,2.7,10.8
+2026-06-29,Downtown,coffee,Latte,5,4.22,21.1
+2026-06-15,Downtown,pastry,Scone,6,3.02,18.12
+2026-03-27,Airport,merch,Gift Card,2,24.89,49.78
+2026-04-18,Uptown,tea,Chai Latte,3,4.12,12.36
+2026-03-24,Airport,pastry,Scone,2,3.08,6.16
+2026-05-18,Airport,tea,Chai Latte,3,3.83,11.49
+2026-06-27,Downtown,pastry,Scone,4,3.13,12.52
+2026-05-04,Riverside,merch,Mug,2,12.02,24.04
+2026-03-07,Riverside,merch,Mug,1,11.54,11.54
+2026-05-21,Airport,tea,Chai Latte,1,4.15,4.15
+2026-02-05,Downtown,merch,Bag of Beans,2,14.87,29.74
+2026-06-23,Airport,coffee,Latte,4,4.43,17.72
+2026-01-18,Riverside,sandwich,BLT,3,6.87,20.61
+2026-03-28,Riverside,tea,Chai Latte,4,3.83,15.32
+2026-02-07,Riverside,tea,Green Tea,8,2.93,23.44
+2026-05-04,Downtown,pastry,Croissant,2,3.09,6.18
+2026-03-15,Airport,pastry,Scone,4,3.03,12.12
+2026-02-18,Riverside,merch,Gift Card,1,24.58,24.58
+2026-01-28,Uptown,sandwich,Turkey Club,5,7.77,38.85
+2026-05-24,Uptown,merch,Bag of Beans,4,14.65,58.6
+2026-05-13,Airport,pastry,Croissant,3,3.11,9.33
+2026-02-19,Downtown,sandwich,Veggie Wrap,3,6.59,19.77
+2026-01-17,Downtown,sandwich,Veggie Wrap,8,6.8,54.4
+2026-02-03,Downtown,pastry,Scone,1,3.04,3.04
+2026-03-26,Downtown,sandwich,Turkey Club,4,7.69,30.76
+2026-05-25,Riverside,tea,Green Tea,3,3.03,9.09
+2026-01-12,Airport,sandwich,Turkey Club,5,7.36,36.8
+2026-04-05,Riverside,coffee,Cappuccino,4,4.12,16.48
+2026-02-24,Riverside,tea,Iced Tea,4,2.8,11.2
+2026-01-21,Riverside,merch,Bag of Beans,1,14.11,14.11
+2026-03-28,Riverside,pastry,Scone,2,3.0,6.0
+2026-01-20,Downtown,tea,Green Tea,4,2.99,11.96
+2026-04-12,Downtown,,Cappuccino,1,4.07,4.07
+2026-06-13,Downtown,sandwich,Veggie Wrap,1,6.53,6.53
+2026-06-13,,coffee,Espresso,1,2.54,2.54
+2026-01-22,Airport,tea,Chai Latte,1,4.15,4.15
+2026-05-11,Riverside,merch,Gift Card,1,24.65,24.65
+2026-05-18,Riverside,sandwich,BLT,3,6.65,19.95
+2026-05-25,Uptown,coffee,Espresso,3,2.58,7.74
+2026-02-11,Riverside,pastry,Muffin,3,3.12,9.36
+2026-03-22,Riverside,pastry,Muffin,4,3.06,12.24
+2026-03-20,Airport,sandwich,BLT,5,6.77,33.85
+2026-04-15,Uptown,sandwich,BLT,3,7.22,21.66
+2026-05-18,Uptown,merch,Mug,3,11.65,34.95
+2026-02-10,Riverside,coffee,Latte,3,4.15,12.45
+2026-06-08,Uptown,coffee,Drip Coffee,2,2.78,5.56
+2026-01-21,Uptown,pastry,Muffin,3,3.1,9.3
+2026-03-26,Downtown,coffee,Drip Coffee,6,2.77,16.62
+2026-05-24,Uptown,merch,Bag of Beans,2,15.21,30.42
+2026-04-29,Airport,pastry,Scone,2,2.98,5.96
+2026-02-21,Airport,tea,Green Tea,2,2.86,5.72
+2026-03-05,Uptown,coffee,Cappuccino,4,3.82,15.28
+2026-02-27,Riverside,pastry,Muffin,4,2.88,11.52
+2026-04-17,Riverside,pastry,Croissant,4,3.19,12.76
+2026-06-16,Airport,coffee,Drip Coffee,2,2.63,5.26
+2026-04-07,Downtown,pastry,Scone,2,3.23,6.46
+2026-01-10,Airport,tea,Chai Latte,6,3.86,23.16
+2026-02-19,Uptown,pastry,Scone,5,3.18,15.9
+2026-06-02,Airport,coffee,Latte,2,4.32,8.64
+2026-06-08,Riverside,coffee,Drip Coffee,1,2.78,2.78
+2026-06-14,Riverside,merch,Gift Card,4,26.15,104.6
+2026-06-04,Airport,merch,Gift Card,4,26.17,104.68
+2026-03-29,Riverside,coffee,Espresso,3,2.49,7.47
+2026-04-12,Airport,coffee,Latte,2,4.29,8.58
+2026-01-10,Airport,merch,Gift Card,8,24.31,194.48
+2026-02-28,Airport,merch,Mug,2,12.38,24.76
+2026-03-12,Uptown,merch,Gift Card,6,24.49,146.94
+2026-03-13,Riverside,tea,Green Tea,5,2.9,14.5
+2026-01-27,Downtown,tea,Chai Latte,1,4.16,4.16
+2026-04-15,Uptown,sandwich,Turkey Club,3,7.31,21.93
+2026-04-28,Airport,coffee,Drip Coffee,3,2.78,8.34
+2026-05-07,Airport,pastry,Croissant,4,3.2,12.8
+2026-02-12,Airport,sandwich,Turkey Club,3,7.32,21.96
+2026-03-17,Downtown,pastry,Muffin,4,2.86,11.44
+2026-06-28,Downtown,tea,Chai Latte,,4.06,12.18
+2026-05-23,Riverside,pastry,Croissant,3,3.19,9.57
+2026-02-05,Airport,coffee,Latte,5,4.37,21.85
+2026-01-12,Uptown,sandwich,Veggie Wrap,3,6.46,19.38
+2026-06-04,Downtown,pastry,Croissant,3,3.37,10.11
+2026-02-27,Airport,sandwich,Veggie Wrap,4,6.9,27.6
+2026-03-26,Uptown,pastry,Muffin,4,2.92,11.68
+2026-06-20,Downtown,tea,Green Tea,2,2.96,5.92
+2026-02-22,Airport,merch,Bag of Beans,4,14.46,57.84
+2026-05-24,Downtown,merch,Gift Card,1,25.48,25.48
+2026-04-08,Airport,pastry,Croissant,5,3.17,15.85
+2026-04-23,Downtown,coffee,Latte,3,4.14,12.42
+2026-01-12,Airport,coffee,Cappuccino,4,,16.08
+2026-03-02,Airport,pastry,Scone,1,3.01,3.01
+2026-04-05,Downtown,pastry,Scone,2,3.25,6.5
+2026-02-19,Riverside,pastry,Muffin,4,3.14,12.56
+2026-04-27,Airport,pastry,Muffin,4,3.14,12.56
+2026-06-02,Riverside,sandwich,Turkey Club,1,7.26,7.26
+2026-03-29,Uptown,merch,Bag of Beans,4,14.66,58.64
+2026-06-15,Riverside,pastry,Croissant,3,3.28,9.84
+2026-03-30,Downtown,merch,Bag of Beans,3,15.19,45.57
+2026-02-16,Riverside,pastry,Muffin,3,3.09,9.27
+2026-01-06,Downtown,sandwich,Veggie Wrap,2,6.92,13.84
+2026-03-02,Airport,coffee,Espresso,4,2.59,10.36
+2026-02-16,Downtown,merch,Bag of Beans,5,14.97,74.85
+2026-06-23,Riverside,sandwich,Veggie Wrap,5,6.8,34.0
+2026-05-05,Riverside,coffee,Latte,5,4.32,21.6
+2026-06-10,Riverside,merch,Gift Card,3,24.81,74.43
+2026-03-24,Uptown,tea,Chai Latte,4,4.05,16.2
+2026-04-06,Airport,merch,Bag of Beans,5,14.61,73.05
+2026-05-24,Riverside,merch,Bag of Beans,2,14.32,28.64
+2026-04-27,Uptown,merch,Gift Card,3,24.83,74.49
+2026-02-03,Airport,sandwich,BLT,1,7.18,7.18
+2026-02-19,Uptown,tea,Chai Latte,4,3.92,15.68
+2026-01-10,Riverside,merch,Gift Card,2,25.47,50.94
+2026-06-06,Riverside,coffee,Drip Coffee,7,2.75,19.25
+2026-01-19,Airport,sandwich,Turkey Club,6,7.85,47.1
+2026-06-10,Riverside,sandwich,BLT,2,6.97,13.94
+2026-01-03,Uptown,tea,Chai Latte,3,3.91,11.73
+2026-01-16,Riverside,tea,Iced Tea,6,2.77,16.62
+2026-01-15,Riverside,pastry,Scone,3,2.98,8.94
+2026-01-14,Uptown,coffee,Espresso,4,2.41,9.64
+2026-06-26,Uptown,tea,Green Tea,6,3.11,18.66
+2026-05-24,Airport,merch,Bag of Beans,4,14.09,56.36
+2026-04-29,Downtown,pastry,Croissant,4,3.36,13.44
+2026-01-30,Uptown,pastry,Croissant,7,3.2,22.4
+2026-03-10,Downtown,sandwich,Turkey Club,2,7.25,14.5
+2026-03-10,Downtown,sandwich,BLT,6,7.13,42.78
+2026-04-07,Airport,pastry,Scone,4,3.21,12.84
+2026-06-25,Downtown,pastry,Scone,2,2.95,5.9
+2026-04-01,Airport,tea,Iced Tea,2,2.66,5.32
+2026-04-05,Airport,pastry,Croissant,2,3.36,6.72
+2026-04-20,Downtown,merch,Mug,6,12.48,74.88
+2026-04-06,Airport,tea,Iced Tea,2,2.72,5.44
+2026-04-06,Uptown,merch,Gift Card,3,24.5,73.5
+2026-06-03,Downtown,pastry,Muffin,1,3.02,3.02
+2026-01-23,Downtown,coffee,Latte,2,4.45,8.9
+2026-05-13,Airport,pastry,Scone,1,3.01,3.01
+2026-04-09,Riverside,merch,Bag of Beans,4,15.17,60.68
+2026-03-04,Downtown,sandwich,BLT,1,7.05,7.05
+2026-04-21,Downtown,sandwich,Veggie Wrap,3,6.67,20.01
+2026-04-03,Airport,merch,Bag of Beans,9,14.46,130.14
+2026-04-15,Riverside,coffee,Cappuccino,4,3.98,15.92
+2026-03-16,Uptown,coffee,Drip Coffee,5,2.77,13.85
+2026-05-20,Riverside,pastry,Scone,4,3.04,12.16
+2026-03-16,Riverside,merch,Bag of Beans,1,14.49,14.49
+2026-06-18,Airport,merch,Bag of Beans,3,15.22,45.66
+2026-05-12,Downtown,coffee,Espresso,3,2.48,7.44
+2026-02-01,Uptown,coffee,Latte,1,4.45,4.45
+2026-03-15,Airport,tea,Iced Tea,7,2.7,18.9
+2026-03-08,Downtown,pastry,Scone,5,3.12,15.6
+2026-01-15,Airport,tea,Iced Tea,1,2.84,2.84
+2026-01-12,Uptown,pastry,Croissant,2,3.17,6.34
+2026-01-24,Downtown,pastry,Croissant,5,3.39,16.95
+2026-02-26,Uptown,pastry,Croissant,3,3.34,10.02
+2026-02-13,Uptown,pastry,Scone,4,3.21,12.84
+2026-02-26,Uptown,pastry,Croissant,1,3.21,3.21
+2026-06-18,Airport,tea,Iced Tea,3,2.88,8.64
+2026-05-31,Airport,merch,Mug,5,12.06,60.3
+2026-02-01,Riverside,coffee,Drip Coffee,3,2.65,7.95
+2026-04-04,Downtown,sandwich,Turkey Club,4,7.38,29.52
+2026-06-01,Downtown,merch,Gift Card,4,25.92,103.68
+2026-01-29,Downtown,coffee,Espresso,4,2.44,9.76
+2026-01-07,Uptown,tea,Green Tea,3,2.95,8.85
+2026-02-14,Downtown,sandwich,Turkey Club,7,7.14,49.98
+2026-03-18,Airport,merch,Bag of Beans,3,14.96,44.88
+2026-05-06,Riverside,sandwich,Veggie Wrap,2,6.91,13.82
+2026-04-01,Downtown,merch,Gift Card,2,25.5,51.0
+2026-01-12,Riverside,tea,Chai Latte,4,3.96,15.84
+2026-03-13,Riverside,coffee,Cappuccino,2,3.98,7.96
+2026-01-11,Uptown,coffee,Espresso,2,2.48,4.96
+2026-06-24,Downtown,pastry,Muffin,2,2.93,5.86
+2026-04-21,Airport,tea,Iced Tea,3,2.64,7.92
+2026-04-17,Uptown,pastry,Scone,3,3.2,9.6
+2026-06-12,Uptown,coffee,Latte,1,4.31,4.31
+2026-06-28,Airport,sandwich,Veggie Wrap,4,6.58,26.32
+2026-03-03,Riverside,coffee,Cappuccino,2,3.82,7.64
+2026-05-10,Airport,tea,Chai Latte,4,3.89,15.56
+2026-04-25,Riverside,tea,Green Tea,5,2.98,14.9
+2026-04-22,Downtown,pastry,Scone,1,2.97,2.97
+2026-01-30,Downtown,coffee,Drip Coffee,6,2.66,15.96
+2026-01-09,Uptown,sandwich,Veggie Wrap,5,7.0,35.0
+2026-02-14,Airport,tea,Green Tea,3,2.95,8.85
+2026-03-25,Uptown,sandwich,Turkey Club,4,7.44,29.76
+2026-05-15,Downtown,tea,Iced Tea,5,2.88,14.4
+2026-03-27,Downtown,pastry,Scone,5,3.16,15.8
+2026-01-16,Uptown,sandwich,Turkey Club,6,7.86,47.16
+2026-06-14,Downtown,merch,Mug,3,12.24,36.72
+2026-05-14,Downtown,sandwich,Veggie Wrap,1,6.88,6.88
+2026-04-28,Airport,merch,Mug,1,11.54,11.54
+2026-03-03,Uptown,coffee,Espresso,2,2.54,5.08
+2026-02-16,Airport,coffee,Cappuccino,4,3.93,15.72
+2026-06-11,Airport,tea,Iced Tea,4,2.84,11.36
+2026-03-22,Airport,tea,Green Tea,1,2.93,2.93
+2026-01-26,Downtown,merch,Gift Card,1,25.3,25.3
+2026-04-09,Uptown,tea,Chai Latte,4,4.09,16.36
+2026-05-03,Riverside,sandwich,Turkey Club,1,7.61,7.61
+2026-06-03,Riverside,merch,Gift Card,4,25.73,102.92
+2026-06-15,Airport,,Muffin,3,2.9,8.7
+2026-06-21,Airport,pastry,Croissant,3,3.09,9.27
+2026-06-05,Airport,pastry,Muffin,5,3.08,15.4
+2026-04-13,Downtown,pastry,Scone,2,3.2,6.4
+2026-04-11,Downtown,tea,Chai Latte,5,4.08,20.4
+2026-06-26,Uptown,tea,Green Tea,6,3.11,18.66
+2026-02-20,Riverside,merch,Mug,5,11.41,57.05
+2026-05-31,Downtown,coffee,Cappuccino,5,4.11,20.55
+2026-05-12,Downtown,sandwich,Veggie Wrap,1,6.62,6.62
+2026-06-15,Uptown,coffee,Espresso,5,2.42,12.1
+2026-03-09,Downtown,merch,Mug,4,12.44,49.76
+2026-04-26,Downtown,merch,Mug,3,12.27,36.81
+2026-03-04,Riverside,merch,Mug,2,11.8,23.6
+2026-04-04,Riverside,merch,Mug,6,12.42,74.52
+2026-02-21,Airport,merch,Gift Card,6,25.82,154.92
+2026-05-12,Uptown,tea,Green Tea,3,3.08,9.24
+2026-06-30,Uptown,coffee,Drip Coffee,4,2.81,11.24
+2026-03-12,Airport,pastry,Muffin,4,3.04,12.16
+2026-03-04,Airport,sandwich,BLT,2,6.89,13.78
+2026-06-01,Airport,pastry,Croissant,3,3.12,9.36
+2026-02-08,Airport,tea,Chai Latte,4,4.03,16.12
+2026-05-14,Uptown,sandwich,BLT,1,7.06,7.06
+2026-06-26,Riverside,pastry,Croissant,1,3.32,3.32
+2026-03-15,Downtown,pastry,Muffin,4,3.02,12.08
+2026-02-12,Downtown,sandwich,Turkey Club,4,7.81,31.24
+2026-05-28,Airport,coffee,Espresso,2,,5.0
+2026-05-19,Riverside,coffee,Drip Coffee,1,2.79,2.79
+2026-01-24,Airport,pastry,Scone,4,3.15,12.6
+2026-06-12,Uptown,pastry,Scone,3,3.16,9.48
+2026-05-27,Riverside,pastry,Croissant,2,3.33,6.66
+2026-04-27,Airport,coffee,Latte,6,4.07,24.42
+2026-06-20,Airport,tea,Green Tea,2,3.08,6.16
+2026-01-29,Downtown,merch,Bag of Beans,3,14.32,42.96
+2026-04-02,Uptown,sandwich,BLT,1,7.26,7.26
+2026-01-05,Riverside,pastry,Muffin,4,3.08,12.32
+2026-02-19,Uptown,merch,Gift Card,3,25.79,77.37
+2026-04-23,Downtown,pastry,Croissant,3,3.12,9.36
+2026-04-24,Downtown,pastry,Muffin,4,3.03,12.12
+2026-04-27,Uptown,coffee,Drip Coffee,6,2.79,16.74
+2026-02-28,Airport,tea,Chai Latte,2,4.11,8.22
+2026-04-15,Downtown,merch,Mug,2,11.54,23.08
+2026-04-11,Riverside,sandwich,BLT,4,6.72,26.88
+2026-05-15,Riverside,,Gift Card,5,24.66,123.3
+2026-05-16,Uptown,pastry,Muffin,7,2.96,20.72
+2026-02-14,Riverside,tea,Chai Latte,4,4.0,16.0
+2026-06-12,Airport,pastry,Scone,2,3.02,6.04
+2026-01-16,Downtown,pastry,Croissant,3,3.29,9.87
+2026-04-23,Airport,sandwich,Turkey Club,1,7.49,7.49
+2026-06-09,Downtown,merch,Bag of Beans,2,14.97,29.94
+2026-05-25,Airport,coffee,Latte,2,4.36,8.72
+2026-04-26,Airport,pastry,Croissant,2,3.1,6.2
+2026-03-05,Riverside,coffee,Espresso,1,2.57,2.57
+2026-02-06,Downtown,pastry,Scone,5,3.0,15.0
+2026-01-18,Riverside,merch,Mug,4,11.88,47.52
+2026-03-15,Downtown,tea,Iced Tea,2,2.79,5.58
+2026-02-13,Airport,merch,Gift Card,6,23.83,142.98
+2026-05-18,Uptown,pastry,Muffin,2,3.03,6.06
+2026-04-01,Airport,tea,Green Tea,4,3.15,12.6
+2026-04-13,Airport,pastry,Scone,2,2.95,5.9
+2026-01-08,Uptown,tea,Chai Latte,2,4.17,8.34
+2026-05-13,Uptown,sandwich,Veggie Wrap,3,6.74,20.22
+2026-04-27,Airport,pastry,Muffin,2,2.98,5.96
+2026-05-26,Uptown,pastry,Scone,1,3.13,3.13
+2026-03-09,Riverside,tea,Green Tea,3,3.1,9.3
+2026-04-30,Downtown,coffee,Drip Coffee,2,2.85,5.7
+2026-04-22,Downtown,coffee,Latte,2,4.23,8.46
+2026-05-18,Downtown,merch,Mug,3,11.65,34.95
+2026-05-25,Riverside,tea,Iced Tea,5,2.77,13.85
+2026-03-03,Riverside,pastry,Muffin,1,3.15,3.15
+2026-03-12,Uptown,sandwich,Turkey Club,1,7.42,7.42
+2026-04-08,Riverside,pastry,Scone,2,3.19,6.38
+2026-05-13,Downtown,pastry,Croissant,3,3.34,10.02
+2026-02-21,Uptown,merch,Mug,6,11.85,71.1
+2026-05-15,Airport,coffee,Drip Coffee,2,2.78,5.56
+2026-04-10,Airport,sandwich,Veggie Wrap,5,6.81,34.05
+2026-03-14,Riverside,pastry,Scone,2,3.12,6.24
+2026-03-29,Downtown,tea,Chai Latte,5,4.17,20.85
+2026-06-28,Airport,merch,Mug,5,11.56,57.8
+2026-02-08,Airport,coffee,Latte,5,4.2,21.0
+2026-05-20,Riverside,pastry,Scone,4,3.25,13.0
+2026-05-20,Riverside,coffee,Cappuccino,4,3.97,15.88
+2026-05-01,Riverside,tea,Chai Latte,4,,15.8
+2026-04-29,Uptown,merch,Gift Card,6,25.28,151.68
+2026-03-31,Uptown,merch,Gift Card,3,25.11,75.33
+2026-02-03,Airport,merch,Gift Card,3,24.77,74.31
+2026-03-09,Downtown,tea,Chai Latte,1,4.17,4.17
+2026-02-06,Airport,merch,Mug,4,12.54,50.16
+2026-03-10,Uptown,,Drip Coffee,3,2.63,7.89
+2026-04-04,Downtown,coffee,Espresso,2,2.52,5.04
+2026-02-04,Airport,pastry,Croissant,2,3.35,6.7
+2026-01-28,Airport,pastry,Muffin,5,3.0,15.0
+2026-02-24,Uptown,tea,Chai Latte,3,4.1,12.3
+2026-06-16,Airport,coffee,Cappuccino,3,4.09,12.27
+2026-06-14,Uptown,sandwich,Turkey Club,5,7.23,36.15
+2026-03-24,Riverside,tea,Iced Tea,2,2.83,5.66
+2026-03-11,Downtown,sandwich,Veggie Wrap,1,6.95,6.95
+2026-05-22,Riverside,coffee,Espresso,3,2.41,7.23
+2026-06-23,Airport,sandwich,Turkey Club,4,7.71,30.84
+2026-01-30,Downtown,coffee,Cappuccino,4,4.19,16.76
+2026-06-18,Airport,tea,Iced Tea,3,2.87,8.61
+2026-02-08,Uptown,tea,Green Tea,1,3.12,3.12
+2026-05-27,Uptown,tea,Iced Tea,1,2.68,2.68
+2026-06-03,Uptown,coffee,Drip Coffee,1,2.63,2.63
+2026-04-27,Downtown,coffee,Latte,4,4.46,17.84
+2026-03-18,Riverside,merch,Gift Card,4,25.1,100.4
+2026-06-06,Airport,coffee,Latte,5,4.21,21.05
+2026-06-30,Downtown,pastry,Scone,2,3.23,6.46
+2026-01-12,Airport,pastry,Scone,3,3.16,9.48
+2026-04-08,Uptown,merch,Bag of Beans,1,15.18,15.18
+2026-05-30,Downtown,pastry,Scone,3,3.15,9.45
+2026-06-12,Downtown,merch,Gift Card,3,24.05,72.15
+2026-06-28,Downtown,coffee,Latte,1,4.38,4.38
+2026-02-23,Riverside,tea,Iced Tea,3,2.75,8.25
+2026-04-24,Downtown,sandwich,Turkey Club,6,7.55,45.3
+2026-03-10,Downtown,merch,Bag of Beans,3,14.09,42.27
+2026-06-15,Downtown,sandwich,Veggie Wrap,3,6.48,19.44
+2026-05-22,Airport,merch,Bag of Beans,5,14.66,73.3
+2026-03-05,Airport,sandwich,Veggie Wrap,5,7.01,35.05
+2026-02-09,Downtown,sandwich,BLT,4,7.31,29.24
+2026-06-20,Uptown,pastry,Scone,4,3.22,12.88
+2026-03-01,Downtown,pastry,Croissant,2,3.41,6.82
+2026-06-04,Uptown,merch,Gift Card,3,25.98,77.94
+2026-03-21,Airport,,Bag of Beans,5,14.14,70.7
+2026-05-21,Downtown,sandwich,Turkey Club,3,7.27,21.81
+2026-04-07,Riverside,merch,Bag of Beans,3,14.44,43.32
+2026-05-07,Downtown,merch,Mug,3,12.42,37.26
+2026-02-22,Uptown,pastry,Muffin,4,3.03,12.12
+2026-04-11,Airport,pastry,Muffin,6,2.93,17.58
+2026-03-31,Airport,pastry,Scone,5,2.98,14.9
+2026-06-16,Uptown,merch,Mug,1,11.64,11.64
+2026-06-11,Riverside,coffee,Espresso,5,2.51,12.55
+2026-05-10,Airport,merch,Mug,2,,24.9
+2026-01-20,Airport,pastry,Scone,3,3.12,9.36
+2026-03-10,Downtown,sandwich,BLT,4,7.26,29.04
+2026-06-11,Uptown,sandwich,Veggie Wrap,5,6.77,33.85
+2026-06-13,Uptown,pastry,Muffin,4,3.05,12.2
+2026-04-29,Airport,pastry,Muffin,6,3.14,18.84
+2026-04-16,Downtown,coffee,Latte,4,4.09,16.36
+2026-04-26,Uptown,pastry,Croissant,4,3.1,12.4
+2026-02-22,Uptown,tea,Chai Latte,2,3.84,7.68
+2026-05-28,Airport,tea,Green Tea,1,3.0,3.0
+2026-05-19,Downtown,pastry,Croissant,7,3.3,23.1
+2026-03-30,Uptown,sandwich,BLT,2,6.86,13.72
+2026-03-06,Airport,tea,Iced Tea,6,2.81,16.86
+2026-04-07,Uptown,coffee,Cappuccino,1,4.03,4.03
+2026-03-21,Downtown,sandwich,Veggie Wrap,8,6.46,51.68
+2026-04-19,Downtown,coffee,Drip Coffee,3,2.63,7.89
+2026-06-14,Airport,coffee,Espresso,2,2.55,5.1
+2026-04-03,Downtown,merch,Gift Card,5,25.41,127.05
+2026-01-26,Airport,sandwich,Veggie Wrap,1,6.84,6.84
+2026-01-08,Uptown,coffee,Drip Coffee,2,2.73,5.46
+2026-01-20,Riverside,tea,Iced Tea,1,2.61,2.61
+2026-06-29,Riverside,sandwich,Turkey Club,2,7.33,14.66
+2026-06-30,Riverside,coffee,Drip Coffee,4,2.85,11.4
+2026-03-11,Uptown,tea,Green Tea,5,3.03,15.15
+2026-05-17,Airport,sandwich,Turkey Club,4,7.37,29.48
+2026-04-13,Uptown,merch,Gift Card,1,25.53,25.53
+2026-05-26,Uptown,pastry,Scone,1,3.13,3.13
+2026-06-12,Airport,sandwich,Turkey Club,4,7.39,29.56
+2026-03-18,Downtown,pastry,Croissant,3,3.4,10.2
+2026-06-13,Uptown,coffee,Drip Coffee,4,2.64,10.56
+2026-04-04,Uptown,tea,Chai Latte,5,4.17,20.85
+2026-06-05,Uptown,tea,Chai Latte,4,4.19,16.76
+2026-05-19,Riverside,sandwich,BLT,2,6.91,13.82
+2026-06-12,Riverside,coffee,Drip Coffee,3,2.72,8.16
+2026-01-28,Uptown,coffee,Drip Coffee,1,2.64,2.64
+2026-02-28,Uptown,tea,Chai Latte,5,,20.75
+2026-04-30,Airport,sandwich,Veggie Wrap,4,6.43,25.72
+2026-04-10,Riverside,coffee,Latte,4,4.38,17.52
+2026-04-18,Riverside,merch,Gift Card,4,24.97,99.88
+2026-02-14,Downtown,merch,Mug,6,11.99,71.94
+2026-06-22,Airport,merch,Mug,4,11.69,46.76
+2026-04-16,Airport,merch,Gift Card,4,25.9,103.6
+2026-02-05,Riverside,sandwich,Veggie Wrap,4,6.42,25.68
+2026-05-07,Airport,merch,Gift Card,4,24.46,97.84
+2026-04-02,Airport,sandwich,BLT,2,6.88,13.76
+2026-01-24,Riverside,pastry,Muffin,6,2.99,17.94
+2026-05-28,Airport,pastry,Scone,3,3.15,9.45
+2026-03-30,Riverside,tea,Chai Latte,4,4.13,16.52
+2026-04-17,Riverside,coffee,Drip Coffee,5,2.71,13.55
+2026-02-21,Riverside,coffee,Drip Coffee,7,2.66,18.62
+2026-03-16,Uptown,pastry,Scone,4,3.08,12.32
+2026-03-08,Uptown,merch,Bag of Beans,4,14.66,58.64
+2026-04-19,Uptown,coffee,Latte,1,4.41,4.41
+2026-04-07,Uptown,pastry,Muffin,1,2.92,2.92
+2026-05-02,Uptown,merch,Gift Card,4,24.61,98.44
+2026-05-30,Uptown,sandwich,BLT,5,6.73,33.65
+2026-06-28,Downtown,pastry,Scone,3,3.12,9.36
+2026-02-14,Airport,sandwich,BLT,5,7.06,35.3
+2026-06-04,Airport,coffee,Latte,4,4.24,16.96
+2026-06-17,Uptown,tea,Green Tea,1,2.95,2.95
+2026-04-23,Riverside,sandwich,Veggie Wrap,1,7.04,7.04
+2026-02-06,Airport,merch,Mug,2,12.05,24.1
+2026-04-05,Uptown,sandwich,Veggie Wrap,1,6.98,6.98
+2026-04-28,Riverside,tea,Chai Latte,4,4.11,16.44
+2026-01-16,Riverside,tea,Iced Tea,6,2.77,16.62
+2026-01-24,Downtown,merch,Bag of Beans,5,14.43,72.15
+2026-04-21,Riverside,merch,Bag of Beans,3,14.78,44.34
+2026-03-05,Airport,tea,Green Tea,4,2.89,11.56
+2026-05-31,Riverside,merch,Mug,4,11.41,45.64
+2026-06-18,Downtown,tea,Iced Tea,5,2.7,13.5
+2026-01-06,Airport,coffee,Latte,2,4.38,8.76
+2026-04-30,Airport,pastry,Scone,5,3.1,15.5
+2026-04-26,Uptown,merch,Bag of Beans,4,13.82,55.28
+2026-04-17,Downtown,sandwich,Veggie Wrap,4,6.78,27.12
+2026-05-28,Uptown,coffee,Latte,5,4.18,20.9
+2026-05-24,Uptown,coffee,Cappuccino,3,4.04,12.12
+2026-04-24,Airport,merch,Bag of Beans,5,14.11,70.55
+2026-06-10,Airport,pastry,Croissant,4,3.19,12.76
+2026-04-11,Riverside,merch,Bag of Beans,5,13.85,69.25
+2026-01-16,Downtown,merch,Mug,8,12.53,100.24
+2026-05-24,Airport,tea,Iced Tea,4,2.63,10.52
+2026-03-15,Uptown,tea,Chai Latte,2,3.86,7.72
+2026-03-09,Airport,pastry,Scone,1,3.15,3.15
+2026-01-04,Riverside,pastry,Scone,3,3.17,9.51
+2026-06-21,Downtown,coffee,Cappuccino,5,4.11,20.55
+2026-01-28,Airport,sandwich,Veggie Wrap,3,6.91,20.73
+2026-05-05,Airport,tea,Chai Latte,2,3.83,7.66
+2026-04-26,Riverside,merch,Gift Card,4,25.73,102.92
+2026-03-20,Downtown,sandwich,BLT,3,6.77,20.31
+2026-05-21,Airport,tea,Chai Latte,6,4.1,24.6
+2026-03-09,Airport,tea,Iced Tea,3,2.76,8.28
+2026-06-26,Riverside,pastry,Croissant,1,3.32,3.32
+2026-04-20,Riverside,tea,Iced Tea,,2.85,11.4
+2026-03-31,Uptown,merch,Bag of Beans,4,15.14,60.56
+2026-01-21,Downtown,sandwich,Turkey Club,7,7.87,55.09
+2026-06-15,Airport,pastry,Croissant,3,3.35,10.05
+2026-03-10,Uptown,sandwich,Turkey Club,5,7.31,36.55
+2026-03-19,Airport,tea,Chai Latte,4,3.94,15.76
+2026-06-12,Riverside,,Drip Coffee,3,2.72,8.16
+2026-06-05,Airport,sandwich,Turkey Club,6,7.3,43.8
+2026-03-14,,sandwich,Veggie Wrap,7,6.97,48.79
+2026-01-27,Uptown,merch,Mug,4,11.5,46.0
+2026-06-12,Airport,merch,Mug,3,11.95,35.85
+2026-01-22,Riverside,merch,Gift Card,5,26.23,131.15
+2026-03-09,Riverside,coffee,Latte,3,4.04,12.12
+2026-05-16,Airport,coffee,Cappuccino,7,3.81,26.67
+2026-03-02,Uptown,pastry,Croissant,1,3.2,3.2
+2026-02-28,Riverside,sandwich,BLT,1,6.72,6.72
+2026-01-23,Airport,tea,Chai Latte,5,4.02,20.1
+2026-04-02,Riverside,coffee,Espresso,5,2.42,12.1
+2026-06-28,Riverside,merch,Mug,5,12.4,62.0
+2026-05-15,Riverside,merch,Mug,2,11.63,23.26
+2026-01-21,Uptown,merch,Mug,4,11.54,46.16
+2026-06-06,Downtown,sandwich,BLT,4,6.89,27.56
+2026-03-11,Airport,coffee,Cappuccino,3,4.16,12.48
+2026-03-15,Riverside,coffee,Espresso,4,2.41,9.64
+2026-06-23,Riverside,merch,Gift Card,5,24.6,123.0
+2026-06-13,Uptown,sandwich,BLT,7,7.01,49.07
+2026-05-03,Downtown,tea,Green Tea,1,3.06,3.06
+2026-04-26,Uptown,pastry,Scone,1,3.16,3.16
+2026-05-03,Airport,merch,Bag of Beans,3,15.18,45.54
+2026-01-05,Airport,coffee,Espresso,5,2.58,12.9
+2026-02-05,Airport,pastry,Muffin,5,2.89,14.45
+2026-03-13,Downtown,merch,Gift Card,5,24.07,120.35
+2026-05-25,Uptown,merch,Bag of Beans,5,15.03,75.15
+2026-02-04,Uptown,merch,Bag of Beans,3,14.05,42.15
+2026-04-16,Riverside,merch,Gift Card,4,24.17,96.68
+2026-04-29,Downtown,coffee,Latte,6,4.23,25.38
+2026-02-14,Uptown,merch,Gift Card,7,24.77,173.39
+2026-03-18,Riverside,tea,Iced Tea,1,2.8,2.8
+2026-04-12,Downtown,coffee,Latte,3,4.44,13.32
+2026-04-28,,tea,Chai Latte,4,4.11,16.44
+2026-01-24,Airport,tea,Chai Latte,9,3.84,34.56
+2026-03-26,Airport,sandwich,Veggie Wrap,5,6.96,34.8
+2026-06-17,Riverside,sandwich,Veggie Wrap,2,6.92,13.84
+2026-04-09,Riverside,sandwich,Veggie Wrap,4,6.49,25.96
+2026-03-17,Airport,pastry,Croissant,4,3.18,12.72
+2026-01-31,Uptown,tea,Chai Latte,3,4.13,12.39
+2026-04-15,Downtown,pastry,Croissant,1,3.31,3.31
+2026-03-12,Riverside,tea,Iced Tea,3,2.84,8.52
+2026-03-23,Downtown,pastry,Scone,3,3.12,9.36
+2026-05-05,Riverside,pastry,Scone,3,3.09,9.27
+2026-05-03,Riverside,tea,Iced Tea,2,,5.4
+2026-06-17,Airport,coffee,Drip Coffee,4,2.8,11.2
+2026-03-22,Uptown,coffee,Latte,2,4.09,8.18
+2026-02-13,Riverside,tea,Chai Latte,5,3.87,19.35
+2026-01-19,Uptown,merch,Mug,4,12.52,50.08
+2026-04-15,Uptown,coffee,Latte,1,4.04,4.04
+2026-03-10,Uptown,tea,Chai Latte,3,3.86,11.58
+2026-04-18,Riverside,tea,Chai Latte,1,4.17,4.17
+2026-05-25,Riverside,coffee,Drip Coffee,3,2.77,8.31
+2026-06-27,Downtown,sandwich,Turkey Club,3,7.23,21.69
+2026-03-07,Uptown,sandwich,Veggie Wrap,5,6.46,32.3
+2026-02-15,Uptown,tea,Iced Tea,5,2.83,14.15
+2026-05-01,Downtown,sandwich,Turkey Club,4,7.37,29.48
+2026-03-13,Airport,coffee,Latte,2,4.21,8.42
+2026-03-12,Downtown,merch,Bag of Beans,4,,59.68
+2026-06-09,Airport,merch,Gift Card,4,25.17,100.68
+2026-01-30,Riverside,merch,Gift Card,4,24.83,99.32
+2026-02-13,Uptown,merch,Mug,5,11.71,58.55
+2026-06-15,Riverside,pastry,Scone,1,3.19,3.19
+2026-06-30,Downtown,pastry,Scone,5,3.14,15.7
+2026-06-25,Riverside,coffee,Latte,4,4.07,16.28
+2026-06-12,Airport,tea,Iced Tea,5,2.7,13.5
+2026-01-03,Uptown,coffee,Cappuccino,6,3.98,23.88
+2026-01-29,Airport,pastry,Croissant,2,3.09,6.18
+2026-03-07,Airport,tea,Green Tea,4,2.88,11.52
+2026-01-09,Uptown,pastry,Croissant,4,3.2,12.8
+2026-06-05,Downtown,sandwich,Turkey Club,2,7.2,14.4
+2026-05-29,Airport,coffee,Drip Coffee,4,2.89,11.56
+2026-01-18,Uptown,sandwich,Turkey Club,3,7.43,22.29
+2026-01-05,Riverside,merch,Gift Card,3,23.75,71.25
+2026-06-07,Riverside,merch,Mug,6,11.67,70.02
+2026-04-20,Airport,tea,Chai Latte,1,4.16,4.16
+2026-05-06,Riverside,pastry,Croissant,2,3.1,6.2
+2026-03-31,Downtown,tea,Iced Tea,3,2.82,8.46
+2026-01-27,Downtown,merch,Gift Card,2,24.99,49.98
+2026-04-20,Downtown,coffee,Drip Coffee,1,2.67,2.67
+2026-05-09,Airport,pastry,Croissant,6,3.1,18.6
+2026-01-29,Airport,pastry,Scone,2,3.01,6.02
+2026-03-27,Riverside,sandwich,BLT,4,6.84,27.36

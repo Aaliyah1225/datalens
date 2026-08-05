@@ -1,0 +1,8 @@
+pandas>=2.0
+matplotlib>=3.7
+click>=8.1
+pytest>=7.4
+
+# Installs this repo's `datalens` package (and the `datalens` CLI command)
+# in editable mode so the two files above are the only source of truth.
+-e .

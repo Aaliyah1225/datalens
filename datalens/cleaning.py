@@ -1,0 +1,111 @@
+"""Data-cleaning functions for DataLens.
+
+These functions are intentionally small and composable so they're easy to
+unit test in isolation. They all take a ``pandas.DataFrame`` in and return a
+new ``pandas.DataFrame`` out (no in-place mutation), which makes them safe to
+chain together.
+"""
+
+from __future__ import annotations
+
+import pandas as pd
+
+NUMERIC_COLUMNS = ["quantity", "unit_price", "revenue"]
+
+
+def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
+    """Drop fully-duplicate rows, keeping the first occurrence.
+
+    Args:
+        df: Input dataframe.
+
+    Returns:
+        A new dataframe with duplicate rows removed. Index is reset.
+    """
+    return df.drop_duplicates().reset_index(drop=True)
+
+
+def handle_missing_values(
+    df: pd.DataFrame,
+    strategy: str = "drop",
+    fill_values: dict | None = None,
+) -> pd.DataFrame:
+    """Handle missing (NaN) values in a dataframe.
+
+    Args:
+        df: Input dataframe.
+        strategy: Either ``"drop"`` (drop any row containing a NaN) or
+            ``"fill"`` (fill NaNs using ``fill_values`` or sensible
+            per-column defaults: numeric columns get their column mean,
+            everything else gets ``"unknown"``).
+        fill_values: Optional explicit mapping of column name -> fill value.
+            Only used when ``strategy == "fill"``. Columns not present in
+            this mapping fall back to the default behaviour described above.
+
+    Returns:
+        A new dataframe with missing values handled according to
+        ``strategy``.
+
+    Raises:
+        ValueError: If ``strategy`` is not one of ``"drop"`` or ``"fill"``.
+    """
+    if strategy not in {"drop", "fill"}:
+        raise ValueError(f"Unknown strategy: {strategy!r}. Use 'drop' or 'fill'.")
+
+    if strategy == "drop":
+        return df.dropna().reset_index(drop=True)
+
+    fill_values = fill_values or {}
+    result = df.copy()
+    for column in result.columns:
+        if column in fill_values:
+            result[column] = result[column].fillna(fill_values[column])
+        elif pd.api.types.is_numeric_dtype(result[column]):
+            result[column] = result[column].fillna(result[column].mean())
+        else:
+            result[column] = result[column].fillna("unknown")
+    return result.reset_index(drop=True)
+
+
+def coerce_types(df: pd.DataFrame, date_column: str = "date") -> pd.DataFrame:
+    """Coerce known columns to appropriate dtypes.
+
+    Parses ``date_column`` as a datetime and casts columns listed in
+    ``NUMERIC_COLUMNS`` (that are present) to numeric, coercing unparsable
+    values to NaN rather than raising.
+
+    Args:
+        df: Input dataframe.
+        date_column: Name of the column to parse as a date.
+
+    Returns:
+        A new dataframe with coerced dtypes.
+    """
+    result = df.copy()
+    if date_column in result.columns:
+        result[date_column] = pd.to_datetime(result[date_column], errors="coerce")
+    for column in NUMERIC_COLUMNS:
+        if column in result.columns:
+            result[column] = pd.to_numeric(result[column], errors="coerce")
+    return result
+
+
+def clean_data(
+    df: pd.DataFrame,
+    missing_strategy: str = "drop",
+    date_column: str = "date",
+) -> pd.DataFrame:
+    """Run the standard cleaning pipeline: coerce types, dedupe, handle NaNs.
+
+    Args:
+        df: Raw input dataframe.
+        missing_strategy: Passed through to :func:`handle_missing_values`.
+        date_column: Passed through to :func:`coerce_types`.
+
+    Returns:
+        A cleaned dataframe.
+    """
+    result = coerce_types(df, date_column=date_column)
+    result = remove_duplicates(result)
+    result = handle_missing_values(result, strategy=missing_strategy)
+    return result
