@@ -5,6 +5,8 @@ these tests just confirm the CLI wiring works end to end.
 
 import os
 
+import json
+
 import pandas as pd
 from click.testing import CliRunner
 
@@ -55,6 +57,53 @@ def test_clean_command_smoke(tmp_path):
     assert os.path.isfile(output_path)
 
 
+def test_summarize_command_export_json(tmp_path):
+    csv_path=tmp_path/"sample.csv"
+    output_path=tmp_path/"summary.json"
+    _write_sample_csv(str(csv_path))
+
+    runner=CliRunner()
+    result=runner.invoke(cli,[
+        "summarize",
+        str(csv_path),
+        "--by",
+        "category",
+        "--output",
+        str(output_path),
+        "--format",
+        "json",
+    ],)
+    assert result.exit_code==0
+    assert os.path.isfile(output_path)
+
+    with open(output_path,"r",encoding="utf-8") as f:
+        data=json.load(f)
+
+    assert "summary" in data
+    assert "breakdown" in data
+    assert data["summary"]["row_count"]==3
+
+def test_summarize_command_export_csv(tmp_path):
+    csv_path=tmp_path/"sample.csv"
+    output_path=tmp_path/"breakdown.csv"
+    _write_sample_csv(str(csv_path))
+    runner=CliRunner()
+    result=runner.invoke(cli,[
+        "summarize",
+        str(csv_path),
+        "--by",
+        "category",
+        "--output",
+        str(output_path),
+        "--format",
+        "csv",
+    ],)
+    assert result.exit_code==0
+    assert os.path.isfile(output_path)
+
+    df_out=pd.read_csv(output_path)
+    assert "category" in df_out.columns
+    assert "total_revenue" in df_out.columns
 def test_quality_command_writes_issues(tmp_path):
     csv_path = tmp_path / "quality_sample.csv"
     output_path = tmp_path / "quality_issues.csv"
