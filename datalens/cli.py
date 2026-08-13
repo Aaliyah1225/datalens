@@ -17,7 +17,7 @@ import click
 import pandas as pd
 
 from datalens.analysis import group_by_summary, summarize, rolling_average
-from datalens.charts import plot_by_category
+from datalens.charts import plot_by_category, plot_revenue_over_time
 from datalens.cleaning import clean_data
 from datalens.quality import find_data_quality_issues
 
@@ -44,6 +44,7 @@ def cli() -> None:
     default=None,
     help="Optional column to also show a group-by breakdown for (e.g. 'category').",
 )
+
 @click.option(
     "--output",
     default=None,
@@ -105,18 +106,37 @@ def _save_summary(summary: dict,breakdown: pd.DataFrame | None, output_path: str
     help="Column to group by for the chart.",
 )
 @click.option(
+    "--kind",
+    default="bar",
+    type=click.Choice(["bar", "line"]),
+    show_default=True,
+    help="Type of chart to generate.",
+)
+@click.option(
     "--output",
     default="chart.png",
     show_default=True,
     help="Path to write the PNG chart to.",
 )
-def chart(input_csv: str, by: str, output: str) -> None:
-    """Generate a bar chart of revenue grouped by --by from INPUT_CSV."""
+def chart(input_csv: str, by: str, kind: str, output: str) -> None:
+    """Generate a bar or line chart from INPUT_CSV."""
     df = _load_csv(input_csv)
+
     try:
-        path = plot_by_category(df, output_path=output, by=by)
+        if kind == "line":
+            path = plot_revenue_over_time(
+                df,
+                output_path=output,
+            )
+        else:
+            path = plot_by_category(
+                df,
+                output_path=output,
+                by=by,
+            )
     except KeyError as exc:
         raise click.ClickException(str(exc)) from exc
+
     click.echo(f"Chart saved to {path}")
 
 

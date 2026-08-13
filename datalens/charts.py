@@ -46,3 +46,37 @@ def plot_by_category(
     fig.savefig(output_path)
     plt.close(fig)
     return output_path
+
+
+def plot_revenue_over_time(
+    df: pd.DataFrame,
+    output_path: str,
+) -> str:
+    """Save a line chart of daily revenue over time.
+
+    Args:
+        df: Input dataframe.
+        output_path: Path (including filename) to write the PNG to.
+
+    Returns:
+        The ``output_path`` that was written, for convenience.
+    """
+    working = df.copy()
+    working["date"] = pd.to_datetime(working["date"], errors="coerce")
+
+    daily = working.groupby(working["date"].dt.date)["revenue"].sum()
+    daily.index = pd.to_datetime(daily.index)
+    daily = daily.sort_index()
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.plot(daily.index, daily)
+    ax.set_title("Daily revenue over time")
+    ax.set_xlabel("date")
+    ax.set_ylabel("revenue ($)")
+    fig.autofmt_xdate()
+    fig.tight_layout()
+    fig.savefig(output_path)
+    plt.close(fig)
+
+    return output_path
+    

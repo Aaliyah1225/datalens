@@ -154,3 +154,14 @@ def test_trend_command_invalid_column_error(tmp_path):
 
     assert result.exit_code != 0
     assert isinstance(result.exception, KeyError)
+
+def test_chart_command_line_chart(tmp_path):
+    csv_path = tmp_path / "sample.csv"
+    output_path = tmp_path / "line_chart.png"
+    _write_sample_csv(str(csv_path))
+
+    runner = CliRunner()
+    result = runner.invoke(cli, ["chart", str(csv_path), "--kind", "line", "--output", str(output_path)])
+
+    assert result.exit_code == 0
+    assert os.path.isfile(output_path)
