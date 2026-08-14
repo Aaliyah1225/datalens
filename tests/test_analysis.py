@@ -6,6 +6,7 @@ from datalens.analysis import (
     rolling_average,
     summarize,
     validate_columns,
+    detect_outliers,
 )
 
 
@@ -118,3 +119,39 @@ def test_summarize_empty_dataframe():
     summary = summarize(empty_df)
 
     assert summary["row_count"] == 0
+
+
+def test_detect_outliers_returns_no_rows(sample_df):
+    result = detect_outliers(sample_df, column="revenue", method="iqr", threshold=1.5)
+
+    assert result.empty
+
+
+def test_detect_outliers_returns_one_outlier(sample_df):
+    df = sample_df.copy()
+    df.loc[4, "revenue"] = 10000
+
+    result = detect_outliers(df, column="revenue", method="iqr", threshold=1.5)
+
+    assert list(result.index) == [4]
+    assert result.iloc[0]["revenue"] == 10000
+
+
+def test_detect_outliers_zscore_returns_one_outlier(sample_df):
+    df = pd.concat([sample_df] * 3, ignore_index=True)
+    df.loc[2, "revenue"] = 10000
+
+    result = detect_outliers(df, method="zscore", threshold=3)
+
+    assert list(result.index) == [2]
+    assert result.iloc[0]["revenue"] == 10000
+
+
+def test_detect_outliers_invalid_method_raises(sample_df):
+    with pytest.raises(ValueError):
+        detect_outliers(sample_df, method="unsupported")
+
+
+def test_detect_outliers_missing_column_raises(sample_df):
+    with pytest.raises(KeyError):
+        detect_outliers(sample_df, column="not_a_column")
