@@ -79,3 +79,23 @@ def plot_revenue_over_time(
     plt.close(fig)
 
     return output_path
+
+
+def plot_top_items(
+    df: pd.DataFrame,
+    output_path: str,
+    n: int = 5,
+) -> str:
+    """Save a horizontal bar chart of the top-N items by revenue."""
+    top_items = df.groupby("item")["revenue"].sum().sort_values(ascending=False).head(n)
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    top_items.plot(kind="barh", ax=ax)
+    ax.set_title(f"Top {n} Items by Revenue")
+    ax.set_xlabel("Revenue ($)")
+    ax.set_ylabel("Item")
+    fig.tight_layout()
+    fig.savefig(output_path)
+    plt.close(fig)
+
+    return output_path

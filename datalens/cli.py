@@ -21,7 +21,7 @@ from datalens.analysis import (
     summarize,
     validate_columns,
 )
-from datalens.charts import plot_by_category, plot_revenue_over_time
+from datalens.charts import plot_by_category, plot_revenue_over_time, plot_top_items
 from datalens.cleaning import clean_data
 from datalens.quality import find_data_quality_issues
 
@@ -114,7 +114,7 @@ def _save_summary(summary: dict, breakdown: pd.DataFrame | None, output_path: st
 @click.option(
     "--kind",
     default="bar",
-    type=click.Choice(["bar", "line"]),
+    type=click.Choice(["bar", "line", "top-items"]),
     show_default=True,
     help="Type of chart to generate.",
 )
@@ -131,6 +131,11 @@ def chart(input_csv: str, by: str, kind: str, output: str) -> None:
     try:
         if kind == "line":
             path = plot_revenue_over_time(
+                df,
+                output_path=output,
+            )
+        elif kind == "top-items":
+            path = plot_top_items(
                 df,
                 output_path=output,
             )
