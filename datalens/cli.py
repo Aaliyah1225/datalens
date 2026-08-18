@@ -25,6 +25,7 @@ from datalens.analysis import (
 from datalens.charts import plot_by_category, plot_revenue_over_time, plot_top_items
 from datalens.cleaning import clean_data
 from datalens.quality import find_data_quality_issues
+from datalens.report import build_report
 
 
 def _load_csv(path: str) -> pd.DataFrame:
@@ -150,6 +151,25 @@ def chart(input_csv: str, by: str, kind: str, output: str) -> None:
         raise click.ClickException(str(exc)) from exc
 
     click.echo(f"Chart saved to {path}")
+
+
+@cli.command()
+@click.argument("input_csv", type=str)
+@click.option(
+    "--output",
+    default="report.md",
+    show_default=True,
+    help="Path to write the Markdown report to.",
+)
+def report(input_csv: str, output: str) -> None:
+    """Generate a Markdown report from INPUT_CSV."""
+    df = _load_csv(input_csv)
+    markdown = build_report(df)
+
+    with open(output, "w", encoding="utf-8") as f:
+        f.write(markdown)
+
+    click.echo(f"Report saved to {output}")
 
 
 @cli.command()
