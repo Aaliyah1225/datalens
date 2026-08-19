@@ -310,3 +310,13 @@ def test_summarize_invalid_format_flag(tmp_path):
     result = runner.invoke(cli, ["summarize", str(csv_path), "--format", "xml"])
 
     assert result.exit_code != 0
+
+def test_load_csv_rejects_malformed_csv(tmp_path):
+    bad_file = tmp_path / "malformed.csv"
+    bad_file.write_text("a,b,c\n1,2\n3,4,5,6\n")
+
+    runner = CliRunner()
+    result = runner.invoke(cli, ["summarize", str(bad_file)])
+
+    assert result.exit_code != 0
+    assert "Input file is invalid" in result.output
