@@ -16,6 +16,7 @@ import click
 import pandas as pd
 
 from datalens.analysis import (
+    detect_outliers,
     group_by_summary,
     rolling_average,
     summarize,
@@ -24,6 +25,7 @@ from datalens.analysis import (
 from datalens.charts import plot_by_category, plot_revenue_over_time, plot_top_items
 from datalens.cleaning import clean_data
 from datalens.quality import find_data_quality_issues
+from datalens.report import build_report
 
 
 def _load_csv(path: str) -> pd.DataFrame:
@@ -157,6 +159,25 @@ def chart(input_csv: str, by: str, kind: str, output: str) -> None:
 @click.argument("input_csv", type=str)
 @click.option(
     "--output",
+    default="report.md",
+    show_default=True,
+    help="Path to write the Markdown report to.",
+)
+def report(input_csv: str, output: str) -> None:
+    """Generate a Markdown report from INPUT_CSV."""
+    df = _load_csv(input_csv)
+    markdown = build_report(df)
+
+    with open(output, "w", encoding="utf-8") as f:
+        f.write(markdown)
+
+    click.echo(f"Report saved to {output}")
+
+
+@cli.command()
+@click.argument("input_csv", type=str)
+@click.option(
+    "--output",
     default="cleaned.csv",
     show_default=True,
     help="Path to write the cleaned CSV to.",
@@ -225,6 +246,47 @@ def quality(input_csv: str, output: str, tolerance: float) -> None:
         raise click.ClickException(str(exc)) from exc
     issues.to_csv(output, index=False)
     click.echo(f"Found {len(issues)} quality issue rows. Saved to {output}")
+
+
+@cli.command(name="outliers")
+@click.argument("input_csv", type=str)
+@click.option(
+    "--column",
+    default="revenue",
+    show_default=True,
+    help="Numeric column to scan for outliers.",
+)
+@click.option(
+    "--method",
+    default="iqr",
+    type=click.Choice(["iqr", "zscore"], case_sensitive=False),
+    show_default=True,
+    help="Detection method: Tukey fences ('iqr') or absolute z-score ('zscore').",
+)
+@click.option(
+    "--threshold",
+    default=1.5,
+    type=click.FloatRange(min=0.0, min_open=True),
+    show_default=True,
+    help="IQR multiplier, or the z-score cutoff when --method is 'zscore'.",
+)
+@click.option(
+    "--output",
+    default="outliers.csv",
+    show_default=True,
+    help="Path to write the outlier rows to.",
+)
+def outliers_cmd(input_csv: str, column: str, method: str, threshold: float, output: str) -> None:
+    """Find outlier rows in INPUT_CSV and save them."""
+    df = _load_csv(input_csv)
+    try:
+        found = detect_outliers(df, column=column, method=method, threshold=threshold)
+    except (KeyError, TypeError, ValueError) as exc:
+        raise click.ClickException(str(exc)) from exc
+    found.to_csv(output, index=False)
+    click.echo(
+        f"Found {len(found)} outlier rows in {column!r} using {method}. Saved to {output}"
+    )
 
 
 @cli.command(name="trend")
