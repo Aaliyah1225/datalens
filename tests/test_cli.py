@@ -311,7 +311,7 @@ def test_summarize_invalid_format_flag(tmp_path):
 
     assert result.exit_code != 0
 
-def test_load_csv_rejects_malformed_csv(tmp_path):
+def test_summarize_rejects_malformed_csv(tmp_path):
     bad_file = tmp_path / "malformed.csv"
     bad_file.write_text("a,b,c\n1,2\n3,4,5,6\n")
 
