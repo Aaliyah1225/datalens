@@ -57,11 +57,13 @@ def test_clean_command_smoke(tmp_path):
 
 
 def test_clean_command_missing_file_errors_cleanly(tmp_path):
+    output_path = tmp_path / "cleaned.csv"
     runner = CliRunner()
-    result = runner.invoke(cli, ["clean", str(tmp_path / "does_not_exist.csv"), "--output"])
+    result = runner.invoke(cli, ["clean", str(tmp_path / "does_not_exist.csv"), "--output", str(output_path)])
 
     assert result.exit_code != 0 
-    assert not os.path.isfile(tmp_path)
+    assert "not found" in result.output.lower()
+
 
 def test_summarize_command_export_json(tmp_path):
     csv_path = tmp_path / "sample.csv"
@@ -211,11 +213,13 @@ def test_chart_command_line_chart(tmp_path):
 
 
 def test_chart_command_missing_file_errors_cleanly(tmp_path):
+    output_path = tmp_path / "line_chart1.png"
     runner = CliRunner()
-    result = runner.invoke(cli, ["chart", str(tmp_path / "does_not_exist.csv"), "--kind", "line", "--output"])
+    result = runner.invoke(cli, ["chart", str(tmp_path / "does_not_exist.csv"), "--kind", "line", "--output", str(output_path)])
 
     assert result.exit_code != 0
-    assert not os.path.isfile(tmp_path)
+    assert "not found" in result.output.lower()
+
 
 def test_clean_command_verbose_prints_details(tmp_path):
     csv_path = tmp_path / "sample.csv"
@@ -327,8 +331,9 @@ def test_summarize_invalid_format_flag(tmp_path):
 
 
 def test_summarize_rejects_malformed_csv(tmp_path):
+    MALFORMED_CSV_CONTENTS="a,b,c\n1,2\n3,4,5,6\n"
     bad_file = tmp_path / "malformed.csv"
-    bad_file.write_text("a,b,c\n1,2\n3,4,5,6\n")
+    bad_file.write_text(MALFORMED_CSV_CONTENTS)
 
     runner = CliRunner()
     result = runner.invoke(cli, ["summarize", str(bad_file)])
@@ -338,27 +343,30 @@ def test_summarize_rejects_malformed_csv(tmp_path):
 
 
 def test_clean_rejects_malformed_csv(tmp_path):
+    MALFORMED_CSV_CONTENTS="a,b,c\n1,2\n3,4,5,6\n"
     bad_file = tmp_path / "malformed.csv"
     output_path = tmp_path / "new_file.csv"
-    bad_file.write_text("a,b,c\n1,2\n3,4,5,6\n")
+    bad_file.write_text(MALFORMED_CSV_CONTENTS)
 
     runner = CliRunner()
     result = runner.invoke(cli, ["clean", str(bad_file), "--output", str(output_path)])
     
     assert result.exit_code != 0
-    assert not os.path.isfile(output_path)
+    assert "Input file is invalid" in result.output
 
 
 def test_chart_rejects_malformed_csv(tmp_path):
+    MALFORMED_CSV_CONTENTS="a,b,c\n1,2\n3,4,5,6\n"
     bad_file = tmp_path / "malformed.csv"
     output_path = tmp_path = "organized_chart.csv"
-    bad_file.write_text("a,b,c\n1,2\n3,4,5,6\n")
+    bad_file.write_text(MALFORMED_CSV_CONTENTS)
 
     runner = CliRunner()
     result = runner.invoke(cli, ["chart", str(bad_file), "--kind", "line", "--output", str(output_path)])
 
     assert result.exit_code != 0
-    assert not os.path.isfile(output_path)
+    assert "Input file is invalid" in result.output
+
 
 def _write_outlier_csv(path: str) -> None:
     """Nine tightly-clustered revenues plus one obvious outlier."""
